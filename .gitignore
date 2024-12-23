@@ -28,6 +28,16 @@ wp-content/debug.log
 wp-content/database/
 wp-content/db.php
 
+# WordPress files outside wp-content
+wp-admin/*
+wp-includes/*
+wp-*
+index.php
+xmlrpc.php
+readme.html
+license.txt
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 
