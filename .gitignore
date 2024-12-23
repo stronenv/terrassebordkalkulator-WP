@@ -10,13 +10,13 @@
 # !themes/twentyseventeen
 #
 wp-content/plugins/*
+!wp-content/plugins/terrassebordkalkulator
 
 wp-content/mu-plugins/*
 !wp-content/mu-plugins/mu-loader.php
-!wp-content/mu-plugins/a8csp-project-scaffold-features
 
 wp-content/themes/*
-!wp-content/themes/a8csp-project-scaffold
+!wp-content/themes/terrassebordkalkulator
 
 # Other wp-content exclusions
 wp-content/upgrade/*
