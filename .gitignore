@@ -15,7 +15,7 @@ wp-content/mu-plugins/*
 !wp-content/mu-plugins/mu-loader.php
 !wp-content/mu-plugins/a8csp-project-scaffold-features
 
-themes/*
+wp-content/themes/*
 !wp-content/themes/a8csp-project-scaffold
 
 # Other wp-content exclusions
