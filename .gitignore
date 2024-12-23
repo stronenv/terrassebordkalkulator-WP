@@ -9,26 +9,24 @@
 # !mu-plugins/hello.php
 # !themes/twentyseventeen
 #
-plugins/*
+wp-content/plugins/*
 
-mu-plugins/*
-!mu-plugins/mu-loader.php
-!mu-plugins/colophon
-!mu-plugins/team51-tracking
-!mu-plugins/a8csp-project-scaffold-features
+wp-content/mu-plugins/*
+!wp-content/mu-plugins/mu-loader.php
+!wp-content/mu-plugins/a8csp-project-scaffold-features
 
 themes/*
-!themes/a8csp-project-scaffold
+!wp-content/themes/a8csp-project-scaffold
 
 # Other wp-content exclusions
-upgrade/*
-uploads/*
-languages/*
-debug.log
+wp-content/upgrade/*
+wp-content/uploads/*
+wp-content/languages/*
+wp-content/debug.log
 
 # WordPress.com Studio DB exclusions
-database/
-db.php
+wp-content/database/
+wp-content/db.php
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
