@@ -26,6 +26,10 @@ uploads/*
 languages/*
 debug.log
 
+# WordPress.com Studio DB exclusions
+database/
+db.php
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,windows,composer,sublimetext,phpstorm+all,visualstudiocode,phpcodesniffer
 
