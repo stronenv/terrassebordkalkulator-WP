@@ -33,7 +33,7 @@ export default function save() {
 				<div>Terrassebord bredde</div>
 				<strong><span id="bredde"></span> mm</strong>
 			</div>
-			<input type="range"  class="terrassebordkalkulator__input__slider" name="breddeInput"  id="breddeInput" min="60" max="160" value="120" aria-label="Terrassebord bredde" />
+			<input type="range"  class="terrassebordkalkulator__input__slider" name="breddeInput"  id="breddeInput" min="60" max="180" value="120" aria-label="Terrassebord bredde" />
 			</div>
 	  </div>
 	);
