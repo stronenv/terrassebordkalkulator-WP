@@ -25,7 +25,7 @@ wp-content/languages/*
 wp-content/debug.log
 
 # WordPress.com Studio DB exclusions
-wp-content/database/
+wp-content/database
 wp-content/db.php
 
 # WordPress files outside wp-content
