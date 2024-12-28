@@ -31,11 +31,11 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
+		<div { ...useBlockProps() }>
 			{ __(
-				'Terrassebordkalkulator – hello from the editor!',
+				'There are no settings for the calculator in the editor, yet.',
 				'terrassebordkalkulator'
 			) }
-		</p>
+		</div>
 	);
 }

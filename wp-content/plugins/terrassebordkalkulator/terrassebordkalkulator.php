@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Terrassebordkalkulator
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Block for Terrassebordkalkulator
  * Requires at least: 6.6
  * Requires PHP:      7.2
  * Version:           0.1.0
