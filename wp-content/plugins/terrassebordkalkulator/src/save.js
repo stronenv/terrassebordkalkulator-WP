@@ -18,20 +18,19 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<div { ...useBlockProps.save() }>
-			<h5>Du trenger:</h5>
-			<h3><span id="calculatedLopemeter"></span> løpemeter terrassebord</h3>
-			<h3><span id="calculatedSkruer"></span> skruer</h3>
+			<h3><span id="calculatedLopemeter">268</span> løpemeter terrassebord</h3>
+			<h3><span id="calculatedSkruer">1300</span> skruer</h3>
 			<div  class="terrassebordkalkulator__input">
 				<div class="terrassebordkalkulator__input__display-row">
 				<div>Antall kvadratmeter:</div>
-				<strong><span id="kvm"></span> m<sup>2</sup></strong>
+				<strong><span id="kvm">30</span> m<sup>2</sup></strong>
 				</div>
 			<input type="range" class="terrassebordkalkulator__input__slider" name="kvmInput" id="kvmInput" min="1" max="300" value="30" aria-label="Antall kvadratmeter" />
 			</div>
 			<div class="terrassebordkalkulator__input">
 			<div class="terrassebordkalkulator__input__display-row">
 				<div>Terrassebord bredde</div>
-				<strong><span id="bredde"></span> mm</strong>
+				<strong><span id="bredde">120</span> mm</strong>
 			</div>
 			<input type="range"  class="terrassebordkalkulator__input__slider" name="breddeInput"  id="breddeInput" min="60" max="180" value="120" aria-label="Terrassebord bredde" />
 			</div>
