@@ -156,3 +156,6 @@ if ( ! function_exists( 'terrassebordkalkulator_format_binding' ) ) :
 		}
 	}
 endif;
+
+// Jetpack Stats to Honor DNT
+add_filter( 'jetpack_honor_dnt_header_for_stats', '__return_true' );
