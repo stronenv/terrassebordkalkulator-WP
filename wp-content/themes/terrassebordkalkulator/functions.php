@@ -165,15 +165,26 @@ if ( ! function_exists( 'terrassebordkalkulator_adsense_script' ) ) :
 	function terrassebordkalkulator_adsense_script() {
 		wp_enqueue_script(
 			'google-adsense',
-			'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+			'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4938404840001268',
 			array(),
 			'1.0.0',
 			false
 		);
-		wp_add_inline_script( 'google-adsense', '', 'before' );
-		wp_script_add_data( 'google-adsense', 'async', true );
-		wp_script_add_data( 'google-adsense', 'crossorigin', 'anonymous' );
-		wp_script_add_data( 'google-adsense', 'client', 'ca-pub-4938404840001268' );
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'terrassebordkalkulator_adsense_script' );
+
+// Add Google AdSense script attributes
+if ( ! function_exists( 'terrassebordkalkulator_adsense_attributes' ) ) :
+	/**
+	 * Adds async and crossorigin attributes to AdSense script
+	 */
+	function terrassebordkalkulator_adsense_attributes( $attributes = array() ) {
+		if ( 'google-adsense-js' === $attributes['id'] ) {
+			$attributes['async']       = true;
+			$attributes['crossorigin'] = 'anonymous';
+		}
+		return $attributes;
+	}
+endif;
+add_filter( 'wp_script_attributes', 'terrassebordkalkulator_adsense_attributes', 10, 3 );
