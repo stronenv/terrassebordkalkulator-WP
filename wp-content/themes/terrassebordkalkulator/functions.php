@@ -159,3 +159,21 @@ endif;
 
 // Jetpack Stats to Honor DNT
 add_filter( 'jetpack_honor_dnt_header_for_stats', '__return_true' );
+
+// Add Google AdSense code
+if ( ! function_exists( 'terrassebordkalkulator_adsense_script' ) ) :
+	function terrassebordkalkulator_adsense_script() {
+		wp_enqueue_script(
+			'google-adsense',
+			'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+			array(),
+			'1.0.0',
+			false
+		);
+		wp_add_inline_script( 'google-adsense', '', 'before' );
+		wp_script_add_data( 'google-adsense', 'async', true );
+		wp_script_add_data( 'google-adsense', 'crossorigin', 'anonymous' );
+		wp_script_add_data( 'google-adsense', 'client', 'ca-pub-4938404840001268' );
+	}
+endif;
+add_action( 'wp_enqueue_scripts', 'terrassebordkalkulator_adsense_script' );
